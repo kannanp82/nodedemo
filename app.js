@@ -1,6 +1,14 @@
-var http = require('http');
+var express = require('express');
+var app = express();
+var cities = {cities:["Amsterdam","Berlin","New York","San Francisco","Tokyo"]}
 
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Hello World!');
-}).listen(8081);
+app.get('/', function(req, res){
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.write("Hello world");
+    res.end();
+});
+
+var port = process.env.PORT || 8080;
+app.listen(port);
+
+module.exports = app;
