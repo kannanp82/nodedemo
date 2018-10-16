@@ -4,7 +4,7 @@ var cities = {cities:["Amsterdam","Berlin","New York","San Francisco","Tokyo"]}
 
 app.get('/', function(req, res){
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.write("Jenkins - Github Demo - SCP test - PM Revert");
+    res.write("Jenkins - Github Demo");
     res.end();
 });
 
