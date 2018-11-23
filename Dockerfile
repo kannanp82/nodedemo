@@ -8,8 +8,6 @@ RUN apt-get update && apt-get upgrade -y \
 RUN mkdir /app
 WORKDIR /app
 
-COPY --from=0 /app/src/public/static/bower_components/ /app/src/public/static/bower_components/
-
 COPY package.json /app/
 COPY app.js /app/server.js
 
