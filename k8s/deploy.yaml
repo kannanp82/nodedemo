@@ -11,8 +11,20 @@ spec:
     spec:
       containers:
         - name: node-demo-app
-          image: kannanplayarea.azurecr.io/hello-world:v1
+          image: kannanplayarea/hello-world:1.0
           ports:
             - containerPort: 80
-          imagePullSecrets:
-            - name: kannanplayarea-aks-acr-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-demo-app
+spec:
+  type: LoadBalancer
+  ports:
+  --name: "node-demo-app-port"
+    port: 8081
+    targetPort: 8081
+status:
+  loadBalancer: {}
+  
