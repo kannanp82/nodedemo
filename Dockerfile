@@ -1,4 +1,4 @@
-# Preparing bower files (only have bower in dev dependencies..)
+# Preparing bower files (only have bower in dev dependencies....)
 FROM node
 
 
