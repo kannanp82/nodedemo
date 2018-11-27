@@ -15,6 +15,6 @@ RUN npm install
 # --only=production
 
 
-EXPOSE 80
+EXPOSE 8081
 
 CMD [ "npm", "start" ]
