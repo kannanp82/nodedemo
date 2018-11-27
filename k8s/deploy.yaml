@@ -13,7 +13,7 @@ spec:
         - name: node-demo-app
           image: kannanplayarea.azurecr.io/hello-world:v1
           ports:
-            - containerPort: 80
+            - containerPort: 8081
           imagePullSecrets:
             - name: kannanplayarea-aks-acr-secret			
 ---
