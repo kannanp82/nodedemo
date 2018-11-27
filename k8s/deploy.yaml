@@ -15,4 +15,4 @@ spec:
           ports:
             - containerPort: 80
           imagePullSecrets:
-            - name: kannanplayarea
+            - name: kannanplayarea-aks-acr-secret
