@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: node-demo-app
-          image: kannanplayarea.azurecr.io/hello-world:v1
+          image: kannanplayarea.azurecr.io/kannanplayarea/docker_demo:v39
           ports:
             - containerPort: 8081
           imagePullSecrets:
