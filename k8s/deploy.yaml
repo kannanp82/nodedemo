@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
         - name: node-demo-app
-          image: kannanplayarea/docker_demo:1.0
+          image: kannanplayarea/hello-world:1.0
           ports:
             - containerPort: 80
