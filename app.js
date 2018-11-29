@@ -4,7 +4,7 @@ var cities = {cities:["Amsterdam","Berlin","New York","San Francisco","Tokyo"]}
 
 app.get('/', function(req, res){
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.write("Welcome to Jenkins - Github Demonstration - CI - CD Start");
+    res.write("Welcome to Jenkins - Github Demonstration - CI - CD Demo Inprogress");
     res.end();
 });
 
